@@ -1,0 +1,234 @@
+.centerdiv{
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  margin : 0px;
+}
+a{
+  height: 100px;
+  width: 100px;
+  background-color: #f5f6fa;
+  border-radius: 50px;
+  text-align: center;
+  margin: 10px;
+  line-height: 110px;
+  box-shadow: 1px 4px 2px 2px #dcdde1;
+}
+a i{
+    transition: all 0.3 linear;
+}
+a:hover i{
+  transform: scale(1.4);
+}
+body {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #d5ffff;
+  transition: background-color 0.5s ease;
+  color: #000; 
+  animation-name: backgroundAnimate;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-delay: 2s;
+  animation-iteration-count: 5;
+}
+.about{
+  border: 5px solid blue;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #d3d3d3;
+  margin:0 auto; 
+  max-width: 800px;
+  font-size: 2em;
+  animation-name: colorAnimate1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 1s;
+  animation-iteration-count: 5;
+}
+.education{
+  border: 5px solid blue;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #d3d3d3;
+  margin: 0 auto; 
+  max-width: 800px;
+  font-size: 2em;
+  animation-name: colorAnimate2;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 1s;
+  animation-iteration-count: 5;
+
+}
+.achievements{
+  border: 5px solid blue;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #d3d3d3;
+  margin: 0 auto; 
+  max-width: 800px;
+  font-size: 2em;
+  animation-name: colorAnimate1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 1s;
+  animation-iteration-count: 5;
+}
+.skills{
+  border: 5px solid blue;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #d3d3d3;
+  margin: 0 auto; 
+  max-width: 800px;
+  font-size: 2em;
+  animation-name: colorAnimate2;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 1s;
+  animation-iteration-count: 5;
+}
+.blog{
+  border: 5px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  margin: 0 auto; 
+  max-width: 800px;
+  font-size: 2em;
+  background-color: #d3d3d3;
+}
+.align{
+  text-align: center;
+  font-size: 2em;
+}
+.resume{
+  text-align: center;
+  font-size: 2em;
+}
+section h2 {
+  margin-bottom: 10px; 
+}
+
+section p, section ul {
+  margin-bottom: 10px; 
+}
+.Navbar {
+  background-color: #add8e6; 
+  overflow: hidden;
+  padding: 5px;
+}
+.Navbar a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 2px 3px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.Navbar a:hover {
+  background-color: #d3d3d3; 
+}
+#profile-section {
+  text-align: center;
+}
+#profile-section img {
+  width: 380px; 
+  height: 380px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 3.5% auto; 
+  padding: 20px;
+  border: 15px solid  red;
+}
+.social-section {
+  background-color: gray;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  font-size: 1em;;
+}
+.social-section a {
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 50%; 
+  overflow: hidden; 
+}
+.social-section i {
+  color: #333; 
+  transition: color 0.3s ease; 
+}
+.social-section a:hover i {
+  color: #e84393; 
+}
+.social-section img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+}
+.fa-facebook{
+  color: #316ff6;
+}
+.fa-square-instagram{
+  color:#d62976;
+}
+.fa-github{
+  color:black;
+}
+.fa-envelope{
+  color: red;
+}
+body.dark-mode {
+  background-color: #2c3e50; 
+  color: #ecf0f1; 
+}
+@keyframes colorAnimate1{
+  0% {
+    transform: translateX(-300px);
+    background-color: aquamarine;
+  }
+  100% {
+    transform: translateX(300px);
+    background-color: palevioletred;
+    color:white;
+  }
+}
+@keyframes colorAnimate2{
+  0% {
+    transform: translateX(300px);
+    background-color: aquamarine;
+  }
+  100% {
+    transform: translateX(-300px);
+    background-color: palevioletred;
+    color:white;
+  }
+}
+.dark-mode .about{
+  background-color: gray;
+}
+.dark-mode .achievements{
+  background-color: gray;
+}
+.dark-mode .education{
+  background-color: gray;
+}
+.dark-mode .skills{
+  background-color: gray;
+}
+.dark-mode .blog{
+  background-color: gray;
+}

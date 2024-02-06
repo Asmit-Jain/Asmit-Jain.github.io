@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog 1</title>
+    <link rel="stylesheet" href="styles2.css"> 
+    <script defer src="script2.js"></script>
+</head>
+<body>
+    <section class="blog-section">
+        <div class="blog">
+            <h2>Blog 1</h2>
+            <p>
+            Artificial Intelligence refers to the intelligence of machines. This is in contrast to the natural intelligence of humans and animals. With Artificial Intelligence, machines perform functions such as learning, planning, reasoning and problem-solving. Most noteworthy, Artificial Intelligence is the simulation of human intelligence by machines. It is probably the fastest-growing development in the World of technology and innovation. Furthermore, many experts believe AI could solve major challenges and crisis situations.
+            </p>
+            <div id="pic3" style="display: flex;justify-content: center;">
+            <img style="height: 400px;width:700px;" src="https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2019/08/03081822/Artificial-Intelligence1-768x418.jpg"></div>
+            <p>
+            <b>Types of Artificial Intelligence</b><br><br>
+            First of all, the categorization of Artificial Intelligence is into four types. Arend Hintze came up with this categorization. The categories are as follows:<br><br>
+            <b>Type 1: Reactive machines-</b> These machines can react to situations. A famous example can be Deep Blue, the IBM chess program. Most noteworthy, the chess program won against Garry Kasparov, the popular chess legend. Furthermore, such machines lack memory. These machines certainly cannot use past experiences to inform future ones. It analyses all possible alternatives and chooses the best one.<br><br>
+           <b> Type 2: Limited memory-</b> These AI systems are capable of using past experiences to inform future ones. A good example can be self-driving cars. Such cars have decision making systems. The car makes actions like changing lanes. Most noteworthy, these actions come from observations. There is no permanent storage of these observations.<br><br>
+            <b>Type 3: Theory of mind-</b> This refers to understand others. Above all, this means to understand that others have their beliefs, intentions, desires, and opinions. However, this type of AI does not exist yet.<br><br>
+           <b> Type 4: Self-awareness-</b> This is the highest and most sophisticated level of Artificial Intelligence. Such systems have a sense of self. Furthermore, they have awareness, consciousness, and emotions. Obviously, such type of technology does not yet exist. This technology would certainly be a revolution.<br><br>
+            </p>          
+            <div class="interaction-section" style="display: flex;flex-direction: column;">
+               <button class="like-btn" onclick="toggleLike('blog1')">Like <span id="likeCount_blog1">0 Likes</span></button>
+               
+        <br>
+        <div id="commentContainer_blog1">
+            <input type="text" id="commentInput_blog1">
+            <button onclick="addComment('blog1')">Add Comment...</button>
+            <ul id="commentListContainer_blog1"></ul>
+        </div>        
+        </div>
+       
+    </section>
+</body>
+</html>
